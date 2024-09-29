@@ -3,65 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIODATA AHMAD RAIHAN ANUGRAH</title>
+    <title>Web App Development</title>
     <style>
-        table, th, td {
-            border: 1px solid white;
-            border-collapse: collapse;
+        body {
+            background-color: cadetblue;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
         }
-        th, td {
-            background-color: #96D4D4;
-        }
-        .Kotak {
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: gold;
             text-align: center;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            text-align: center;
+        }
+
+        .bio h2 {
+            margin: 0;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 0px;
+        }
+
+        th, td{
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th{
+            background-color: blue;
+        }
+
+        .bio p {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        link-button:hover {
+            background-color: #45a049;
+        }
+
     </style>
+
 </head>
 <body>
-    <div class="Kotak">
-        <div class="Judul">
-            <h1 align="center">Curriculum Vitae</h1>
-            <p align="center">
-                <img src="rey.jpeg" width="250" height="300">
-            </p>
-            <h2 style="font-family: 'Times New Roman', Times, serif;">
-                Diam seperti padang gurun, bergerak menumbus perisai
-            </h2>
-            <hr>
-            <h2 style="text-align: center; color: blue;">Data Diri</h2>
-            <pre style="font-family: 'Times New Roman'; text-align: left;">
-Nama Lengkap            : Ahmad Raihan Anugrah
-Tempat, Tanggal Lahir   : Makassar, 22 Juli 2004
-Agama                   : Islam
-Alamat                  : Asrama Putra Gedung 3 (LETI)
-Email                   : asparrayhan@gmail.com
-No.HP                   : 0877-5033-9055
-            </pre>
-
-            <h2 style="text-align: center; color: blue;">Riwayat Pendidikan</h2>
-            <table style="width: 100%; margin: 0 auto;">
-                <tr>
-                    <th>Tingkat</th>
-                    <th>Nama Sekolah</th>
-                    <th>Tahun</th>
-                </tr>
-                <tr>
-                    <td>SD</td>
-                    <td>SDN Centre Rappokaleleng</td>
-                    <td>2010-2016</td>
-                </tr>
-                <tr>
-                    <td>SMP</td>
-                    <td>SMPN 1 Bontonompo</td>
-                    <td>2016-2019</td>
-                </tr>
-                <tr>
-                    <td>SMA</td>
-                    <td>SMAN 1 Bontonompo</td>
-                    <td>2019-2022</td>
-                </tr>
-            </table>
+    <h1>Curriculum Vitae</h1>
+    <div class="container">
+        <div class="photo">
+            <img src="xxx.jpeg" alt="XXX">
         </div>
+        <div class="bio">
+            <p><strong>Nama:</strong> Ahmad Raihan Anugrah</p>
+            <p><strong>Tempat / Tanggal Lahir:</strong> Makassar, 22 July 2004</p>
+            <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+            <p><strong>Email:</strong> asparrayhan@gmail.com</p>
+        </div>
+
+        <h2>Riwayat Pendidikan</h2>
+        <table>
+            <tr>
+                <th>Nama Institusi</th>
+                <th>Jenjang</th>
+                <th>Tahun Masuk</th>
+                <th>Tahun Lulus</th>
+            </tr>
+            <tr>
+                <td>SD Centre Rappokaleleng</td>
+                <td>SD</td>
+                <td>2010</td>
+                <td>2016</td>
+            </tr>
+            <tr>
+                <td>SMPN 1 Bontonompo</td>
+                <td>SMP</td>
+                <td>2016</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>SMAN 1 Bontonompo</td>
+                <td>SMA</td>
+                <td>2019</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Telkom University</td>
+                <td>Universitas</td>
+                <td>2022</td>
+                <td>Sekarang</td>
+            </tr>
+      </table>
+      
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya seorang mahasiswa dari Jurusan S1 Sistem Informasi Telkom University
+        Angkatan 2024 yang memiliki ketertarikan pada ruang lingkup 
+        Enterprise Infrastructure Management & System Architecture Governance. 
+        Saya bergabung menjadi staff di Lab EIM pada divisi pengabdian masyarakat untuk periode tahun 2024/2025.
+      </p>
     </div>
+
+    <a href="file:///D:/WAD/WEEK%202/Tugas/Portfolio/portfolio.html" class="link-button" target="_blank">My Portfolio</a>
+
+
 </body>
 </html>
