@@ -3,92 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web App Development</title>
-    <style>
-        body {
-            background-color: cadetblue;
-            margin: 0;
-            padding: 0;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; 
-        }
-
-        h1 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: gold;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .photo img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%; /* Make the image circular */
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .bio {
-            text-align: center;
-        }
-
-        .bio h2 {
-            margin: 0;
-        }
-
-        table{
-            border-collapse: collapse;
-            width: 50%;
-            margin-top: 0px;
-        }
-
-        th, td{
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th{
-            background-color: blue;
-        }
-
-        .bio p {
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: justify;
-        }
-
-        link-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        link-button:hover {
-            background-color: #45a049;
-        }
-
-    </style>
-
+    <title>Web App Development 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Curriculum Vitae</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
     <h1>Curriculum Vitae</h1>
     <div class="container">
         <div class="photo">
@@ -133,19 +59,10 @@
                 <td>2022</td>
                 <td>Sekarang</td>
             </tr>
-      </table>
+        </table>
       
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya seorang mahasiswa dari Jurusan S1 Sistem Informasi Telkom University
-        Angkatan 2022 yang memiliki ketertarikan pada ruang lingkup 
-        Enterprise Infrastructure Management & System Architecture Governance. 
-        Saya bergabung menjadi staff di Lab EIM pada divisi pengabdian masyarakat untuk periode tahun 2024/2025.
-      </p>
+        <h2>Tentang Saya</h2>
+        <p>Saya seorang mahasiswa dari Jurusan S1 Sistem Informasi Telkom University Angkatan 2022 yang memiliki ketertarikan pada ruang lingkup Enterprise Infrastructure Management & System Architecture Governance. Saya bergabung menjadi staff di Lab EIM pada divisi pengabdian masyarakat untuk periode tahun 2024/2025.</p>
     </div>
-
-    <a href="portfolio.html" class="link-button" target="_blank">My Portfolio</a>
-
-
 </body>
 </html>
